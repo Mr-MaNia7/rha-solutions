@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RHA</title>
+    <link rel="icon" href="/static/base/images/logo.png" type="image/png" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap"/>
+    </noscript>
+    <link href="{% static 'base/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'base/css/font-awesome/css/all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'base/css/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'base/css/ekko-lightbox.css' %}" rel="stylesheet">
+    <link href="{% static 'base/css/ekko-lightbox.css' %} " rel="stylesheet">
+    <link href="{% static 'base/css/main.css'%}" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    {% block content %}
+    {% endblock content %}
+
+    <script src="{% static 'base/scripts/jquery.min.js' %}"></script>
+    <script src="{% static 'base/scripts/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'base/scripts/aos.js' %}"></script>
+    <script src="{% static 'base/scripts/ekko-lightbox.min.js' %} "></script>
+    <script src="{% static 'base/scripts/main.js'%}"></script>
+  </body>
+</html>
